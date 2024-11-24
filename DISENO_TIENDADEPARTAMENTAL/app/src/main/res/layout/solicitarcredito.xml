@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Botón Volver -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@null"
+        android:src="@drawable/flecha2"
+        android:contentDescription="Volver"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:scaleType="fitCenter" />
+
+
+    <!-- Contenedor del formulario -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/backButton"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Solicitud de Aumento de Crédito"
+                android:textColor="#003366"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Nombre -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre Completo"
+                android:textColor="#003366"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/nombreEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese su nombre completo"
+                android:padding="10dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Monto Solicitado -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monto Solicitado"
+                android:textColor="#003366"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/montoEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el monto solicitado"
+                android:padding="10dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Motivo del Aumento -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motivo del Aumento"
+                android:textColor="#003366"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/motivoEditText"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Ingrese el motivo del aumento"
+                android:padding="10dp"
+                android:gravity="top"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Checkbox -->
+            <CheckBox
+                android:id="@+id/terminosCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acepto los términos y condiciones"
+                android:textColor="#003366"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Botón Subir Estado de Cuenta -->
+            <Button
+                android:id="@+id/subirEstadoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subir Estado de Cuenta (PDF)"
+                android:backgroundTint="#003366"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Botón Enviar Solicitud -->
+            <Button
+                android:id="@+id/enviarSolicitudButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar Solicitud"
+                android:backgroundTint="#003366"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

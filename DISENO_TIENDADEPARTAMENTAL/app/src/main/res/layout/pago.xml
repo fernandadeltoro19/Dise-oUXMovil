@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#f8f8f8">
+
+    <!-- Botón Volver -->
+
+    <!-- Información del producto -->
+
+    <ImageButton
+        android:id="@+id/btnVolver"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Botón volver"
+        android:src="@drawable/flecha2"
+        android:scaleType="fitCenter" />
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/licuadora"
+        android:layout_gravity="center"
+        android:contentDescription="Licuadora" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Licuadora 500W"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monto Pendiente: $500.00"
+        android:textColor="#ff5f00"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Entrada de monto -->
+    <EditText
+        android:id="@+id/inputMonto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa el monto a pagar"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Botón Pagar -->
+    <Button
+        android:id="@+id/btnPagar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pagar"
+        android:background="#003366"
+        android:textColor="#fff"
+        android:padding="12dp" />
+
+</LinearLayout>
